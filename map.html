@@ -1,0 +1,5 @@
+<section> 
+ 	<button ng-show="routeCtrl.canDrawRoute()" ng-click="mapCtrl.drawRoute(routeCtrl.waypoints)">Display route</button>
+   	<button ng-show="mapCtrl.hasRoute()" ng-click="mapCtrl.clearRoute(); routeCtrl.clearRoute();">Clear route</button>
+	<div id="mapContainer"></div>
+</section>

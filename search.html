@@ -1,0 +1,10 @@
+<section>
+	<div id="searchbox"></div>
+	<h3>Search results</h3>
+	<p ng-hide="searchCtrl.results.length > 0"><i>No search results.</i></p>
+ 	<ul class="list results">
+	 	<li ng-repeat="item in searchCtrl.results">
+	 		{{item.title}} <button ng-click="routeCtrl.addDestination(item); searchCtrl.added(item);">Add</button>
+	 	</li>
+	 </ul>
+</section>
