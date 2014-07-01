@@ -1,10 +1,13 @@
 <section>
 	<h3>Route itinerary</h3>
 	<ul class="list itinerary">
-		<li ng-repeat="item in routeCtrl.waypoints">{{item.title}}
+		<li ng-repeat="item in routeCtrl.waypoints">
+	       	<img ng-src="{{item.icon}}" />{{item.title}} 
+	       	<br/><span class="vicinity">{{item.vicinity}}</span>
 			<button ng-click="routeCtrl.removeDestination(item)">Remove</button>
-			<button ng-hide="routeCtrl.isFirst(item)" ng-click="routeCtrl.moveUp(item)">Up</button>
-			<button ng-hide="routeCtrl.isLast(item)" ng-click="routeCtrl.moveDown(item)">Down</button>
-		</li>
+			<button ng-hide="routeCtrl.isFirst(item)"
+				ng-click="routeCtrl.moveUp(item)">Up</button>
+			<button ng-hide="routeCtrl.isLast(item)"
+				ng-click="routeCtrl.moveDown(item)">Down</button></li>
 	</ul>
 </section>

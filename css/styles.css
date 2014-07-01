@@ -2,6 +2,7 @@ body {
 	font-family: Arial;
 	width: 500px;
 }
+
 button {
 	background-color: white;
 	border: solid 1px #BDCBE0;
@@ -13,12 +14,15 @@ button {
 	padding: 2px 10px 2px 10px;
 	vertical-align: bottom;
 }
+
 button:hover {
 	background-color: rgba(0, 0, 0, 0.35);
 }
+
 i {
 	font-size: 12px;
 }
+
 ul {
 	padding: 0;
 }
@@ -37,12 +41,24 @@ ul {
 .list li button {
 	float: right;
 }
+
+.list li img {
+	height: 20px;
+}
+
+.list li .vicinity {
+	font-size: 12px;
+	color: #999;
+}
+
 .nokia-places-general-searchbox .nokia-searchbox-input {
 	width: 370px;
 }
+
 .nokia-places-general-searchbox .nokia-searchbox {
 	width: 100%;
 }
+
 #mapContainer {
 	height: 500px;
 	width: 100%;
